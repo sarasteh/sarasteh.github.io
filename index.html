@@ -39,9 +39,14 @@
     opacity: 0.6;
            
     }
-      
+    
+      .parallaxtxt {
+        background-attachment:fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+      }  
 
-  .aboutmeimg{
+  .aboutmeimg {
       border-radius: 15px;
       box-shadow: 10px 10px 5px #888888;
   }
@@ -118,45 +123,51 @@
   </div>
 </nav>
 
-<!-- Parallax Image  -->
-<div class="bgimg1 w3-display-container w3-hover-opacity-off" style="width=100%; height=auto;" id="home"> 
+    
+    
+<!-- new Parallax Image -->  
+<div class="container-fluid bgimg1  w3-hover-opacity-off">
+    
+    <div class="row parallaxtxt">
+        <div class="col-sm-12" style= "margin:5% 0 0 5%;">
+            <span style="font-size:3em;font-family:Brush Script MT,cursive;color:black">The purpose of art is washing<br> the dust of daily life off our souls.</span><br><span style="font-size:1.5em;font-family:Brush Script MT, cursive;color:white">Pablo Picasso</span>
+        </div> 
 
-    <div class="w3-display-left" style="white-space:nowrap;margin-left:10%">
-      <span style="font-size:3em;font-family:Brush Script MT,cursive;color:black">The purpose of art is washing<br> the dust of daily life off our souls.</span><br><span style="font-size:1.5em;font-family:Brush Script MT, cursive;color:white">Pablo Picasso</span>
-      
-    </div>     
-</div>
-
-<br>
-
-    <!--  About me -->
-    <div class=" w3-container aboutmepadding" id="about">
-  <h3 class="w3-center">Sara Arasteh</h3>
-  <p class="w3-center"><em></em></p>
-  <p class=".w3-justify">I am an artist with a long standing passion for fine Arts. Since a young age I have been passionate about drawing and illustrating portraits.  To me, drawing was a great form of self-expression. As a little girl, when I started drawing I was amazed how much I wasn't seeing and how much I was missing. Sometimes I draw to say something without words or save the moments that I can't put them into words. I draw to remember those moments. In my view, art is like poetry, it is trying to balance with beauty (art) and truth (science) to express a feeling.<br></p>
-  <div class="w3-row">
-    <div class="w3-col m12 w3-center">
-      
-      <img src="sarapic.jpg" class=".w3-round-large w3-image w3-opacity w3-hover-opacity-off aboutmeimg" alt="Photo of Me" width="500" height="333">
-    </div>
+    </div>    
+</div>   
+<!-- end new Parallax Image -->
+    
 
     
-    </div>
-    <!-- Hide this text on small devices -->
-    <div class="w3-row">
-        <div class="w3-col m12 ">
-            <br>
-            <p class=".w3-justify">I started my first drawing lessons with <a href="http://en.shakibaart.com/default.aspx"><i>Hodjat Shakiba</i></a> and <a href="http://www.sadeghiamini.com"><i>Farhad Sadeghi Amini </i></a>back in IRAN. In 2005, I attended <a href="http://www.robertdunneartist.com/Home_Page.html"> <i>Robert E. Dunne </i></a> pastel/portrait painting classes in Atlanta.  That helped me find my real interest in portrait illustration and painting. I believed that there are hidden stories behind each face and by capturing and illustrating the emotions in a portrait we can retell and save those stories and emotions.  
-            Even during my Bachelor in Electrical Engineering, and Master in Computer Science, I followed my passion, however it was sporadic and was not in a regular routine. Now I combined my passion and interests in art and science and work as a part time web-designer/developer.</p>
+<br>
+
+<!-- new About Me --> 
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-12" style= "margin:0 1em 0 1em;">
+                <h3 class="w3-center">Sara Arasteh</h3>
+                <p class=".w3-justify">I am an artist with a long standing passion for fine Arts. Since a young age I have been passionate about drawing and illustrating portraits.  To me, drawing was a great form of self-expression. As a little girl, when I started drawing I was amazed how much I wasn't seeing and how much I was missing. Sometimes I draw to say something without words or save the moments that I can't put them into words. I draw to remember those moments. In my view, art is like poetry, it is trying to balance with beauty (art) and truth (science) to express a feeling.<br></p>
+            </div>
         </div>
+        <div class="row">
+            <div class="col-sm-12 w3-center">
+                <img src="sarapic.jpg" class=".w3-round-large w3-image w3-opacity w3-hover-opacity-off aboutmeimg" alt="Photo of Me" width="500" height="333">
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="col-sm-12 "  style= "margin:0 1em 0 1em;">
+                <br>
+                <p class=".w3-justify">I started my first drawing lessons with <a href="http://en.shakibaart.com/default.aspx"><i>Hodjat Shakiba</i></a> and <a href="http://www.sadeghiamini.com"><i>Farhad Sadeghi Amini </i></a>back in IRAN. In 2005, I attended <a href="http://www.robertdunneartist.com/Home_Page.html"> <i>Robert E. Dunne </i></a> pastel/portrait painting classes in Atlanta.  That helped me find my real interest in portrait illustration and painting. I believed that there are hidden stories behind each face and by capturing and illustrating the emotions in a portrait we can retell and save those stories and emotions.  
+                Even during my Bachelor in Electrical Engineering, and Master in Computer Science, I followed my passion, however it was sporadic and was not in a regular routine. Now I combined my passion and interests in art and science and work as a part time web-designer/developer.</p>
+            </div>
+        </div>
+    
+    </div>
+         
 
-  </div>
- 
-</div>
-
-<!-- End About me-->          
-
-    <br><br>
+    
+    <br><br>    
 
  <!-- Contact -->
 <div class="contactboarder w3-container w3-padding-small w3-black w3-center" style="width:100%">  
