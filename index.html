@@ -35,15 +35,6 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height:100%;
-   
-    -webkit-background-size: 100%; 
-    -moz-background-size: 100%; 
-    -o-background-size: 100%; 
-    background-size: 100%; 
-    -webkit-background-size: cover; 
-    -moz-background-size: cover; 
-    -o-background-size: cover; 
-        
     background-image: url("sunshine-sm.jpg"); 
     opacity: 0.6;
            
@@ -95,6 +86,16 @@
         background-attachment: scroll;
     } 
       }
+      
+   @media only screen and and (min-device-width : 320px) 
+  and (max-device-width : 480px) {
+    .bgimg-1 {
+        background-image: url("sunshine-bg.jpg"); 
+        background-attachment: fixed;
+    } 
+      }
+      
+     
   </style>
 </head>
 <body>
@@ -152,7 +153,7 @@
 <br>
 
 <!-- new About Me --> 
-    <div class="container-fluid">
+    <div class="container-fluid" id="about">
         <div class="row">
             <div class="col-sm-12" style= "margin:0 1em 0 1em;">
                 <h3 class="w3-center">Sara Arasteh</h3>
