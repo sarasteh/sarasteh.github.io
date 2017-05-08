@@ -29,17 +29,7 @@
       padding: 25px;
     }
       
-    .bgimg1 {
     
-    background-attachment:fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height:100%;
-    background-image: url("collage.jpg"); 
-    opacity: 0.8;
-           
-    }
     
       .parallaxtxt {
         background-attachment:fixed;
@@ -82,14 +72,39 @@
     .w3-wide {letter-spacing: 10px;}
     .w3-hover-opacity {cursor: pointer;}
       
+    .bgimg1 {
+    
+    background-attachment:fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:100%;
+    background-image: url("collage.jpg"); 
+    opacity: 0.8;
+           
+    }
+      
+    .bgimg2 {
+    
+    background-attachment:fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:100%;
+    background-image: url("collage-sm.jpg"); 
+    opacity: 0.8;
+           
+    }
+      
+      
     @media only screen and (max-device-width: 1024px) {
-    .bgimg-1 {
+    .bgimg1,.bgimg2 {
         background-attachment: scroll;
     } 
       }
       
    @media only screen and and (min-device-width : 320px) and (max-device-width : 480px) {
-    .bgimg-1 {
+    bgimg1,.bgimg2 {
         
         background-attachment: fixed;
     } 
@@ -137,7 +152,18 @@
     
     
 <!-- new Parallax Image -->  
-<div class="container-fluid bgimg1  " id="home">
+<div class="container-fluid bgimg1 w3-hide-small  " id="home">
+    <!--
+    <div class="row parallaxtxt">
+        <div class="col-sm-12" style= "margin:20% 0 0 20%;">
+            <span style="font-size:3em;font-family:Brush Script MT,cursive;color:white">The purpose of art is washing the dust of daily life off our souls.
+            </span><br><span style="font-size:1.5em;font-family:Brush Script MT, cursive;color:white">Pablo Picasso</span>
+        </div> 
+    </div>
+    -->
+</div>  
+    
+<div class="container-fluid bgimg2 w3-hide-medium w3-hide-large  " id="home">
     <!--
     <div class="row parallaxtxt">
         <div class="col-sm-12" style= "margin:20% 0 0 20%;">
