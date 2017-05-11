@@ -14,30 +14,49 @@ body, html {
     line-height: 1.8;
 }
 
-/* Create a Parallax Effect */
-.bgimg-1 {
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-/* First image (Logo. Full height) */
-.bgimg-1 {
-    background-image: url('Collage%20big-resized.jpg');
-    min-height: 100%;
-}
 
 
 .w3-wide {letter-spacing: 10px;}
 .w3-hover-opacity {cursor: pointer;}
 
-/* Turn off parallax scrolling for tablets and phones */
-@media only screen and (max-device-width: 1024px) {
-    .bgimg-1 {
-        background-attachment: scroll;
+.bgimg1 {
+    
+    background-attachment:fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:100%;
+    background-image: url('collage-black-big-caption.jpg'); 
+    opacity: 0.8;
+           
     }
-}
+      
+    .bgimg2 {
+    
+    background-attachment:fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height:100%;
+    background-image: url('collage-black-small-caption.jpg'); 
+    opacity: 0.8;
+           
+    }
+      
+      
+    @media only screen and (max-device-width: 1024px) {
+    .bgimg1,.bgimg2 {
+        background-attachment: scroll;
+    } 
+      }
+      
+   @media only screen and and (min-device-width : 320px) and (max-device-width : 480px) {
+    bgimg1,.bgimg2 {
+        
+        background-attachment: fixed;
+    } 
+      }
+    
 </style>
 <body>
 
@@ -93,12 +112,17 @@ body, html {
   </div>
 </div>
 
-<!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min"  id="home">
-  <div class="w3-display-middle " style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large  w3-text-white w3-xxxlarge w3-wide w3-animate-opacity" style="font-family:Brush Script MT,cursive ; font-size:1.5em" ></span>
-  </div>
+<!-- Parallax Image for big and medium screen -->  
+<div class="bgimg1 w3-display-container w3-opacity-min w3-hide-small"  id="home">
+ 
 </div>
+
+<!-- Parallax Image for small screen -->  
+<div class="bgimg2 w3-display-container w3-opacity-min w3-hide-medium w3-hide-large"  id="home">
+ 
+</div>    
+    
+  
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">

@@ -80,7 +80,7 @@
     background-size: cover;
     min-height:100%;
     background-image: url('collage-black-big.jpg'); 
-    opacity: 0.8;
+    opacity: 0.6;
            
     }
       
@@ -92,7 +92,7 @@
     background-size: cover;
     min-height:100%;
     background-image: url('collage-black-small.jpg'); 
-    opacity: 0.8;
+    opacity: 0.6;
            
     }
       
@@ -110,10 +110,19 @@
     } 
       }
       
+    @media (min-width: 768px) {
+  .navbar-nav.navbar-center {
+    position: absolute;
+    left: 50%;
+    transform: translatex(-50%);
+  }
+}
+      
      
   </style>
 </head>
 <body>
+
 
 <nav class="navbar navbar-inverse">
   <div class="container-fluid" >
@@ -123,16 +132,16 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>  
       </button>
-      <a class="navbar-brand" href="#"><span style="font-family:Brush Script MT,cursive ; font-size: 1.5em">Arasteh</span></a>       
+      <span class="navbar-brand" style="font-family:Brush Script MT,cursive ; font-size: 2em">Arasteh</span>      
     </div>
       
     <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
+      <ul class="nav navbar-nav navbar-center">
         <li class="active"><a href="#">Home</a></li>
-        <li><a href="#about">About</a></li>
+        <li><a href="#about" ><i class="fa fa-user"></i> About</a></li>
         
         <li class="dropdown">
-        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Gallery
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><i class="fa fa-th"></i> Gallery
         <span class="caret"></span></a>
         <ul class="dropdown-menu">
           <li><a href="drawings.html">Pencil Drawings</a></li>
@@ -151,27 +160,14 @@
 
     
     
-<!-- new Parallax Image -->  
-<div class="container-fluid bgimg1 w3-hide-small  " id="home">
-    <!--
-    <div class="row parallaxtxt">
-        <div class="col-sm-12" style= "margin:20% 0 0 20%;">
-            <span style="font-size:3em;font-family:Brush Script MT,cursive;color:white">The purpose of art is washing the dust of daily life off our souls.
-            </span><br><span style="font-size:1.5em;font-family:Brush Script MT, cursive;color:white">Pablo Picasso</span>
-        </div> 
-    </div>
-    -->
+<!-- Parallax Image for big and medium screen -->  
+<div class="container-fluid bgimg1 w3-hover-opacity-off w3-hide-small  " id="home">
+   
 </div>  
-    
-<div class="container-fluid bgimg2 w3-hide-medium w3-hide-large " id="home">
-    <!--
-    <div class="row parallaxtxt">
-        <div class="col-sm-12" style= "margin:20% 0 0 20%;">
-            <span style="font-size:3em;font-family:Brush Script MT,cursive;color:white">The purpose of art is washing the dust of daily life off our souls.
-            </span><br><span style="font-size:1.5em;font-family:Brush Script MT, cursive;color:white">Pablo Picasso</span>
-        </div> 
-    </div>
-    -->
+
+<!-- Parallax Image for small screen -->     
+<div class="container-fluid bgimg2 w3-hover-opacity-off w3-hide-medium w3-hide-large " id="home">
+   
 </div>   
 <!-- end new Parallax Image -->
     
