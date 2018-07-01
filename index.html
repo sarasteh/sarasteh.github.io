@@ -22,6 +22,7 @@
     .navbar {
       margin-bottom: 10px;
       border-radius: 0;
+        
     }
     
     /* Add a gray background color and some padding to the footer */
@@ -78,12 +79,15 @@
       
     .bgimg1 {
     
-    background-attachment:fixed;
+     background-attachment:fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    min-height:100%;
-    background-image: url('collage-black-big.jpg'); 
+    background-position: center;
+    background-repeat: no-repeat;
+   
+    min-height:90%;
+    background-image: url('background-4-big.jpg'); 
        
     }
       
@@ -95,7 +99,7 @@
     background-repeat: no-repeat;
     background-size: cover;
     min-height:100%;
-    background-image: url('collage-black-small.jpg');       
+    background-image: url('background-4-small.JPG');       
     }
       
      
@@ -120,7 +124,42 @@
     transform: translatex(-50%);
   }
 }
+      
+        
+.imgcontainer {
+  position: relative;
     
+}
+
+.imgoverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:white;
+}
+
+.imgoverlay:hover {
+  opacity:0.5;
+}
+
+.imgtext {
+  color: black;
+  font-size: 40px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+    font-family:monospace;
+   
+}      
      
   </style>
 </head>
@@ -141,7 +180,7 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-center" >
         
-        <li><a href="#about" style="color:white"><i class="fa fa-user"></i> About</a></li>
+        <li><a href="about.html" style="color:white"><i class="fa fa-user"></i> About</a></li>
         <li class="dropdown" >
                 <a class="dropdown-toggle" style="color:white" data-toggle="dropdown" href="#"><i class="fa fa-th"></i> Gallery
                 <span class="caret"></span></a>
@@ -149,7 +188,7 @@
                   <li><a href="watercolor-portrait.html" style="color:black" >Conceptual Portraits</a></li>
                   <li><a  href="watercolor-scenery.html" style="color:black" >Nature and Scenery</a></li>
                   <li><a  href="watercolor-surreal.html" style="color:black" >Surreal Paintings</a></li>
-                   <li><a  href="drawings.html" style="color:black" >Pencil and Pastel Drawings</a></li>
+                   <li><a  href="drawings.html" style="color:black" >Black and White Drawings</a></li>
                 </ul>
         </li>
         <li class="dropdown" >
@@ -182,76 +221,96 @@
 </div>   
 <!-- end new Parallax Image -->
     
-
     
-<br>
-
-<!-- new About Me --> 
-   
-    <!--
-    <div class="container-fluid" id="about">
-        <div class="row">
-            <div class="col-sm-12" style= "padding:0 1.5em 0 1.5em;">
-                <h3 class="w3-center">Sara Arasteh</h3>
-                <p class="w3-justify">I am an artist with a long standing passion for fine Arts. Since a young age I have been passionate about drawing and illustrating portraits.  To me, drawing was a great form of self-expression.  Sometimes I draw to say something without words or save the moments that I can't put them into words. I draw to remember those moments. In my view, art is like poetry, it is trying to balance with beauty (art) and truth (science) to express a feeling.<br></p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-sm-12 w3-center">
-                <img src="sarapic.jpg" class="w3-round-large w3-image  aboutmeimg" alt="Photo of Me" width="500" height="333">
-            </div>
-        </div>
-        
-        <div class="row">
-            <div class="col-sm-12 "  style= "padding:0 1.5em 0 1.5em; ">
-                <br>
-                <p class="w3-justify">I started my first drawing lessons with <a href="http://en.shakibaart.com/default.aspx"><i>Hodjat Shakiba</i></a> and <a href="http://www.sadeghiamini.com"><i>Farhad Sadeghi Amini </i></a>back in IRAN. In 2005, I attended <a href="http://www.robertdunneartist.com/Home_Page.html"> <i>Robert E. Dunne </i></a> pastel/portrait painting classes in Atlanta.  It helped me find my real interest in portrait illustration and painting. I believed that there are hidden stories behind each face and by capturing and illustrating the emotions in a portrait we can retell and save those stories and emotions.I have worked in variety of media. In the last couple of years watercolor has been my favorite medium and still continues to challenge me in learning to use new techniques in every single work. </p>
-                
-            </div>
-        </div>
-    
-    </div>
-         -->
-
-    <div class="container-fluid " id="about" style="font-size: large;">
-        <div class="row">
-            
-             <div class="col-sm-6 w3-center" style= "margin:1em 0 0 0; padding:2em 0 0 0;" >
-                <img src="sarapic.jpg" class="w3-round-large w3-image  aboutmeimg" alt="Photo of Me" width="500" height="333" >
-            </div>
-            
-            
-            <div class="col-sm-6 w3-center" style= "margin:0 0 0 0; ">
-                <h3 class="w3-center">Sara Arasteh</h3>
-                <p class="w3-justify" style= "padding:0 1.5em 0 0; ">I am an artist with a long standing passion for fine Arts. Since a young age I have been passionate about drawing and illustrating portraits.  To me, drawing was a great form of self-expression.  Sometimes I draw to say something without words or save the moments that I can't put them into words. I draw to remember those moments. In my view, art is like poetry, it is trying to balance with beauty (art) and truth (science) to express a feeling.<br></p>
-        
-                <p class="w3-justify" style= "padding:0 1.5em 0 0; ">I started my first drawing lessons with <a href="http://en.shakibaart.com/default.aspx"><i>Hodjat Shakiba</i></a> and <a href="http://www.sadeghiamini.com"><i>Farhad Sadeghi Amini </i></a>back in IRAN. In 2005, I attended <a href="http://www.robertdunneartist.com"> <i>Robert E. Dunne </i></a> pastel/portrait painting classes in Atlanta.  It helped me find my real interest in portrait illustration and painting. I believed that there are hidden stories behind each face and by capturing and illustrating the emotions in a portrait we can retell and save those stories and emotions.I have worked in variety of media. In the last couple of years watercolor has been my favorite medium and still continues to challenge me in learning to use new techniques in every single work. </p>
-                
-            </div>
-        
-    </div>
-    </div>
-    
-    
-    
+    <h1 class="w3-center" >GALLERY</h1>
     <br>
-    <br>
-    <br>
+    
+    <div class="w3-center">
+
+        <div class="col-md-6">
+          <div class="thumbnail">
+            <a href="watercolor-portrait.html" target="_blank">
+
+                <div class="imgcontainer w3-center">
+                        <img  src="/gallery/Miss%20World.JPG" alt="missworld" style="width:100%" >
+                        <div class= "imgoverlay" >
+                            <div class="imgtext">
+                                <p><b>CONCEPTUAL PORTRAIT</b> </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+            </a>
+
+          </div>    
+        </div>
+
+          <div class="col-md-6">
+          <div class="thumbnail">
+             <a href="watercolor-surreal.html" target="_blank">
+
+                <div class="imgcontainer">
+                        <img src="/gallery/War,%20A%20Deadlock%20Recursion.JPG" alt="war" style="width:100%">
+                        <div class= "imgoverlay" >
+                            <div class="imgtext">
+                                <p><b>SURREAL PAINTINGS</b> </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+            </a>
+          </div>    
+        </div>
+
+
+         <div class="col-md-6">
+          <div class="thumbnail">
+             <a href="watercolor-scenery.html" target="_blank">
+
+                <div class="imgcontainer">
+                        <img src="/gallery/The%20Calm%20Afetr%20the%20Storm.jpg" alt="calmafterstorm" style="width:100%">
+                        <div class= "imgoverlay" >
+                            <div class="imgtext">
+                                <p><b>NATURE AND SCENERY</b> </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+            </a>
+          </div>    
+        </div>
+
+
+        <div class="col-md-6">
+          <div class="thumbnail">
+             <a href="drawings.html" target="_blank">
+
+                <div class="imgcontainer">
+                        <img src="/gallery/pastel2.jpg" alt="war" style="width:100%">
+                        <div class= "imgoverlay" >
+                            <div class="imgtext">
+                                <p><b>BLACK AND WHITE DRAWINGS</b> </p>
+                            </div>
+                        </div>
+
+                    </div>
+
+            </a>
+          </div>    
+        </div>
+
+    </div>
+      
     
     <!-- follow on pintrest -->
-<div class="row">
-    <div class="col-sm-6 text-center">    
-        <a  class="" data-pin-do="embedBoard" data-pin-board-width="400" data-pin-scale-height="240" data-pin-scale-width="80" href="https://www.pinterest.com/sara_arasteh/society6-art-products/"></a>
-    </div>
-    
-    <div class="col-sm-6 text-center" >
-        <a  data-pin-do="embedBoard" data-pin-board-width="400" data-pin-scale-height="240" data-pin-scale-width="80" href="https://www.pinterest.com/sara_arasteh/my-watercolor-paintings/"></a>
-    </div>  
-</div>
+
     
 
  <!-- Contact -->
-<div class="contactboarder w3-container w3-padding-small w3-black w3-center" style="width:100%">  
+<div class="contactboarder w3-container w3-padding-small  w3-center" style="width:100%">  
           
                 <div id="contactme" class="row contact">
 
