@@ -55,7 +55,9 @@
       box-shadow: 10px 10px 5px #888888;
       background-color: black;
 
-  }       
+  }
+     
+
      
 @media (max-width: 600px) {
     .carousel-caption {
@@ -71,6 +73,42 @@
     z-index:1000;
   }
 } 
+     
+.imgcontainer {
+  position: relative;
+    
+}
+
+.imgoverlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color:white;
+}
+
+.imgoverlay:hover {
+  opacity:0.5;
+}
+
+.imgtext {
+  color: black;
+  font-size: 40px;
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: center;
+    font-family:monospace;
+   
+}      
+
      
 </style>
     
@@ -101,9 +139,9 @@
                 <ul class="dropdown-menu w3-white">
                   
                   <li><a href="watercolor-portrait.html" style="color:black" >Conceptual Portraits</a></li>
-                  <li><a  href="watercolor-scenery.html" style="color:black" >Nature and Scenery</a></li>
                   <li><a  href="watercolor-surreal.html" style="color:black" >Surreal Paintings</a></li>
-                    <li><a  href="drawings.html" style="color:black" >Black and White Drawings</a></li>
+                  <li><a  href="watercolor-scenery.html" style="color:black" >Nature and Scenery</a></li>
+                  
                 </ul>
         </li>
           
@@ -131,12 +169,17 @@
     
     <div class="w3-center">
 
-        <div class="col-md-6">
+        <div class="col-md-12">
           <div class="thumbnail">
              <a href="https://society6.com/sara_arasteh/s?q=popular+canvas" target="_blank">
 
                 <div class="imgcontainer">
-                        <img src="shop/canvas2.jpg" alt="war2" style="width:60%">
+                        <img src="shop/canvasprint.JPG" alt="war2" style="width:70%">
+                        <div class= "imgoverlay" >
+                            <div class="imgtext">
+                                <p><b>CANVAS PRINT</b> </p>
+                            </div>
+                        </div>
                 </div>
 
             </a>
@@ -144,47 +187,47 @@
         </div>
 
 
+        <div class="col-md-12">
+          <div class="thumbnail">
+            <a href="https://society6.com/sara_arasteh/s?q=popular+prints" target="_blank">
+
+                <div class="imgcontainer">
+                        <img src="shop/artprint.jpg" alt="war2" style="width:70%">
+                        <div class= "imgoverlay" >
+                            <div class="imgtext">
+                                <p><b>ART PRINT</b> </p>
+                            </div>
+                        </div>
+                </div>
+
+            </a>
+
+          </div>    
+        </div>
+
         
 
 
-        <div class="col-md-6">
+        <div class="col-md-12">
           <div class="thumbnail">
              <a href="https://society6.com/sara_arasteh/s?q=popular+cards" target="_blank">
 
                 <div class="imgcontainer">
-                        <img src="shop/cards2.jpg" alt="war" style="width:60%">      
+                        <img src="shop/stationary%20card.jpg" alt="war2" style="width:70%">
+                        <div class= "imgoverlay" >
+                            <div class="imgtext">
+                                <p><b>STATIONERY CARD</b> </p>
+                            </div>
+                        </div>
                 </div>
 
             </a>
           </div>    
         </div>
         
-        <div class="col-md-6">
-          <div class="thumbnail">
-            <a href="https://society6.com/sara_arasteh/s?q=popular+prints" target="_blank">
-
-                <div class="imgcontainer w3-center">
-                        <img  src="/shop/print1.jpg" alt="missworld2" style="width:80%" >
-                </div>
-
-            </a>
-
-          </div>    
-        </div>
-
         
-         <div class="col-md-6">
-          <div class="thumbnail">
-             <a href="https://society6.com/sara_arasteh/s?q=popular+phone-skins" target="_blank">
-
-                <div class="imgcontainer">
-                        <img src="shop/cases2.jpg" alt="calmafterstorm2" style="width:70%">
-                </div>
-
-            </a>
-          </div>    
-        </div>
         
+         
         
           
 
@@ -214,7 +257,8 @@
 
                              <!-- <a  title="facebook" href="https://www.facebook.com/sarasteh"><img src="facebook_icon.png" style="margin:0px 5px" height="24" width="24"/></a>  -->
 
-                           <a  title="Deviantart" href="https://sara-arasteh.deviantart.com/"> <img src="Deviantart.jpg" style="margin:0px 5px" height="24" width="24"/></a>
+                          <a  title="insta" href="https://www.instagram.com/sara_arasteh/"> <img src="insta-icon.png" style="margin:0px 5px" height="24" width="24"/></a>
+ 
                           
                           <a  title="facebook" href="https://www.facebook.com/SaraArastehArtist/"> <img src="facebook_icon.png" style="margin:0px 5px" height="24" width="24"/></a>
 
